@@ -73,7 +73,7 @@ Now comes step 5
 variables are
 
 	subject	  -  identifies the person who wears the smartphone
-		     values "1", "2", "3", "4", "5"
+		     values "1", "2", "3", "4", "5" through "30"
                      type: character string
 	activity  -  describes the activity of a person
 	             "Walking", "WalkingUpstairs", "WalkingDownstairs", "Sitting", "Standing", "Laying"
