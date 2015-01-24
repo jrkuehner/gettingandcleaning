@@ -1,5 +1,6 @@
 # Readme.md
-# Working directory is UCI HAR Dataset
+
+Working directory is UCI HAR Dataset
 
 Load library(dplyr)
 
