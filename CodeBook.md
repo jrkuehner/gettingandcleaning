@@ -9,7 +9,7 @@ I believe that they are not relevant.
 The data files resulting from these signals can be found in the "Inertial Signals" sub folders of "test" resp. "train".
 
 The data were further preprocessed by appropriate "filters" to suppress "noise" and, in the case of
-linear acceleration, to split total acceleration into "angular" and "gravitational" components. 
+linear acceleration, to split total acceleration into "body" and "gravitational" components. 
 
 Resulting sets of signals are:
 
