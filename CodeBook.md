@@ -19,7 +19,7 @@ Resulting sets of signals are:
 
 In my approach these are genuine "measurements".
 
-The data obtained by further mathematical operations like the various "Jerk" (time derivate), 
+The data obtained by further mathematical operations like the various "Jerk" (time derivation), 
 "Mag" (Euclidean norm) or "Fourier Transformation" data are not considered "measurements" in my approach.
 This is why I omit the corresponding variables in step 2 of the assignment.
 
@@ -60,22 +60,22 @@ Now comes step 5
 variables are
 
 	subject	  -  identifies the person who wears the smartphone
-		     values "1", "2", "3", "4", "5" through "30"
+		     values "1" through "30"
                      type: character string
 	activity  -  describes the activity of a person
 	             "Walking", "WalkingUpstairs", "WalkingDownstairs", "Sitting", "Standing", "Laying"
                      type: character string
-	accelMeanX - values: average of angularAccMeanX for each activity and subject
+	accelMeanX - values: average of bodyAccMeanX for each activity and subject
 		     type: numeric
-	accelMeanY - values: average of angularAccMeanY for each activity and subject
+	accelMeanY - values: average of bodyAccMeanY for each activity and subject
 		     type: numeric
-	accelMeanZ - values: average of angularAccMeanZ for each activity and subject
+	accelMeanZ - values: average of bodyAccMeanZ for each activity and subject
 		     type: numeric
-	accelStdX  - values: average of angularAccStdX for each activity and subject
+	accelStdX  - values: average of bodyAccStdX for each activity and subject
 		     type: numeric
-	accelStdY  - values: average of angularAccStdY for each activity and subject
+	accelStdY  - values: average of bodyAccStdY for each activity and subject
 		     type: numeric
-	accelStdZ  - values: average of angularAccStdZ for each activity and subject
+	accelStdZ  - values: average of bodyAccStdZ for each activity and subject
 		     type: numeric
 	gravityMeanX - values: average of gravityAccMeanX for each activity and subject
 		       type: numeric
@@ -89,7 +89,6 @@ variables are
 		       type: numeric
 	gravityStdZ - values: average of gravityAccStdZ for each activity and subject
 		       type: numeric
-
 	angularAccelMeanX - values: average of angularAccMeanX for each activity and subject
 		     type: numeric
 	angularAccelMeanY - values: average of angularAccMeanY for each activity and subject
@@ -104,18 +103,18 @@ variables are
 		     type: numeric
 
 I think that my final data set is tidy, because
-- each variable forms a column
+       - each variable forms a column
        - each observation forms a row
        - there is only one observation type in the table
 
 I considered the question that there are two groups of subjects: test and training.
-So a column could in fact contain two variables: "variable.test" and "variable.training".
+So a column could in fact contain two variables: "subject.test" and "subject.training".
 
 But in the experiment description there is nowhere mentioned that these groups of subjects
 were treated differently in any manner. May be that this distinction could come in future
 experiments, where recognition of activity in the training group will be subject of a kind of 
-pre - learning process?
-For now I believe that test and training are not important for the assignment.
+pre-learning process?
+For now I believe that test and training are not relevant for the assignment.
 
 Operations to obtain the final data set:
 
@@ -148,7 +147,7 @@ Extract variables as described above with select()
 
 Step 3.
 
-Rename the activity codes 1 through 6 by "Walking" through "Laying" like
+Rename the activity codes "1" through "6" by "Walking" through "Laying" like
 described above.
 
 Step 4.
